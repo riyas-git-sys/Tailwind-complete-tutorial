@@ -1,0 +1,115 @@
+Tailwind CSS 4-Day Course Syllabus
+
+DAY 1: FUNDAMENTALS & LAYOUT
+================================
+- Introduction to Tailwind CSS
+- Utility-First Concept
+- Setup and Configuration
+- Container and Spacing
+  - Margin and Padding utilities
+  - Width and Height utilities
+- Flexbox Layout
+  - Flex direction, wrap, and order
+  - Justify content and align items
+- Grid System
+  - Grid templates and columns
+  - Gap and placement
+- Box Sizing and Display
+  - Block, inline-block, inline, hidden
+- Positioning
+  - Relative, absolute, fixed, sticky
+- Z-index
+
+DAY 2: TYPOGRAPHY & BACKGROUNDS
+================================
+- Text Properties
+  - Font size, weight, family
+  - Text alignment and transformation
+  - Letter spacing and line height
+- Colors and Opacity
+  - Text colors
+  - Background colors
+  - Border colors
+  - Opacity utilities
+- Background Properties
+  - Background size, position, repeat
+  - Gradient backgrounds
+- Sizing
+  - Min/Max width and height
+  - Object fit and position
+- Visibility
+  - Visible, invisible, screen reader only
+
+DAY 3: BORDERS & EFFECTS
+================================
+- Borders
+  - Border width, style, and color
+  - Border radius
+- Shadows
+  - Box shadows of all sizes
+  - Inner shadows
+- Effects and Filters
+  - Opacity and blend modes
+  - Blur, brightness, contrast
+  - Grayscale, hue-rotate, invert
+  - Saturate, sepia
+- Transitions and Animations
+  - Transition property, duration, timing
+  - Hover, focus, active states
+  - Transform utilities (scale, rotate, translate)
+  - Animation utilities
+
+DAY 4: RESPONSIVE DESIGN & COMPONENTS
+================================
+- Responsive Design
+  - Breakpoints (sm, md, lg, xl, 2xl)
+  - Mobile-first approach
+  - Responsive utilities
+- Interactive Components
+  - Buttons with various states
+  - Cards and containers
+  - Navigation bars and menus
+- Forms
+  - Input fields and styling
+  - Checkboxes and radio buttons
+  - Form layouts and validation states
+- Component Examples
+  - Building common UI patterns
+  - Best practices for component design
+- Project Structure and Organization
+  - Component extraction
+  - Using @apply directive
+  - Customizing Tailwind configuration
+
+ADDITIONAL TOPICS (Optional)
+================================
+- Dark mode implementation
+- Customizing the default theme
+- Creating custom utilities
+- Performance optimization
+- Integration with frameworks (React, Vue, etc.)
+- Deployment considerations
+
+PRACTICAL EXERCISES
+================================
+Each day includes hands-on exercises:
+- Day 1: Create a responsive layout with header, sidebar, and main content
+- Day 2: Style a blog post with proper typography and backgrounds
+- Day 3: Build interactive cards with hover effects and animations
+- Day 4: Create a complete responsive website with multiple components
+
+RESOURCES
+================================
+- Official Tailwind CSS Documentation
+- Tailwind UI Component Examples
+- Community Resources and Plugins
+- Cheat Sheets and Reference Guides
+
+Bootstrap Project From Scratch => https://themeforest.net/item/freshcart/56433963?srsltid=AfmBOoqRju413Co-GtEp02qY1Dhnrq8SshpyTaesFiBRqHCObZyFVfPI
+
+Project Link: https://freshcart77.myshopify.com/
+
+tailwind css components library:
+
+1. https://daisyui.com/
+2. https://flowbite.com/

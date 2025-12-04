@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Complete Tailwind CSS Tutorial</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .code-block {
+            background-color: #1a202c;
+            color: #e2e8f0;
+            padding: 1rem;
+            border-radius: 0.5rem;
+            font-family: 'Courier New', monospace;
+            overflow-x: auto;
+            margin: 1rem 0;
+        }
+        .nav-link.active {
+            background-color: #3b82f6;
+            color: white;
+        }
+        .example-box {
+            border: 1px solid #e2e8f0;
+            border-radius: 0.5rem;
+            padding: 1rem;
+            margin: 1rem 0;
+        }
+        .day-btn:hover {
+            transform: translateY(-2px);
+            transition: transform 0.2s ease;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Header -->
+    <header class="bg-blue-600 text-white shadow-lg">
+        <div class="container mx-auto px-4 py-6">
+            <h1 class="text-3xl font-bold">Complete Tailwind CSS Tutorial</h1>
+            <p class="text-blue-100 mt-2">From beginner to advanced - master utility-first CSS</p>
+        </div>
+    </header>
+
+    <!-- Day Navigation -->
+    <section class="bg-white border-b shadow-sm">
+        <div class="container mx-auto px-4 py-4">
+            <h2 class="text-xl font-bold mb-4 text-gray-800 text-center">4-Day Tutorial Navigation</h2>
+            <div class="flex flex-wrap justify-center gap-4">
+                <a href="day1/day1.html" 
+                   class="day-btn bg-blue-500 hover:bg-blue-600 text-white font-medium py-3 px-6 rounded-lg shadow-md flex items-center gap-2">
+                    <i class="fas fa-calendar-day"></i>
+                    Day 1: Introduction & Basics
+                </a>
+                <a href="day1/flexvsgrid.html" 
+                   class="day-btn bg-yellow-500 hover:bg-yellow-600 text-white font-medium py-3 px-6 rounded-lg shadow-md flex items-center gap-2">
+                    <i class="fas fa-calendar-day"></i>
+                    Day 1: Flex Vs Grid Containers
+                </a>
+                <a href="day2/day2.html" 
+                   class="day-btn bg-green-500 hover:bg-green-600 text-white font-medium py-3 px-6 rounded-lg shadow-md flex items-center gap-2">
+                    <i class="fas fa-calendar-day"></i>
+                    Day 2: Layout & Components
+                </a>
+                <a href="day3/day3.html" 
+                   class="day-btn bg-purple-500 hover:bg-purple-600 text-white font-medium py-3 px-6 rounded-lg shadow-md flex items-center gap-2">
+                    <i class="fas fa-calendar-day"></i>
+                    Day 3: Advanced Concepts
+                </a>
+                <a href="day4/day4.html" 
+                   class="day-btn bg-red-500 hover:bg-red-600 text-white font-medium py-3 px-6 rounded-lg shadow-md flex items-center gap-2">
+                    <i class="fas fa-calendar-day"></i>
+                    Day 4: Projects & Practice
+                </a>
+            </div>
+            <p class="text-center text-gray-600 mt-4 text-sm">
+                Click on any day to jump directly to that day's tutorial content
+            </p>
+        </div>
+    </section>
+
+    <div class="container mx-auto px-4 py-8 flex flex-col md:flex-row">
+        <!-- Sidebar Navigation -->
+        <nav class="md:w-1/4 mb-8 md:mb-0 md:pr-8">
+            <div class="bg-white rounded-lg shadow-md p-4 sticky top-4">
+                <h2 class="text-xl font-bold mb-4 text-gray-800">Table of Contents</h2>
+                <ul class="space-y-2">
+                    <li><a href="#intro" class="nav-link block px-4 py-2 rounded hover:bg-blue-50 text-blue-600">Introduction</a></li>
+                    <li><a href="#setup" class="nav-link block px-4 py-2 rounded hover:bg-blue-50 text-blue-600">Setup & Installation</a></li>
+                    <li><a href="#core-concepts" class="nav-link block px-4 py-2 rounded hover:bg-blue-50 text-blue-600">Core Concepts</a></li>
+                    <li><a href="#layout" class="nav-link block px-4 py-2 rounded hover:bg-blue-50 text-blue-600">Layout & Spacing</a></li>
+                    <li><a href="#typography" class="nav-link block px-4 py-2 rounded hover:bg-blue-50 text-blue-600">Typography</a></li>
+                    <li><a href="#colors" class="nav-link block px-4 py-2 rounded hover:bg-blue-50 text-blue-600">Colors & Backgrounds</a></li>
+                    <li><a href="#borders" class="nav-link block px-4 py-2 rounded hover:bg-blue-50 text-blue-600">Borders & Effects</a></li>
+                    <li><a href="#interactivity" class="nav-link block px-4 py-2 rounded hover:bg-blue-50 text-blue-600">Interactivity</a></li>
+                    <li><a href="#responsive" class="nav-link block px-4 py-2 rounded hover:bg-blue-50 text-blue-600">Responsive Design</a></li>
+                    <li><a href="#components" class="nav-link block px-4 py-2 rounded hover:bg-blue-50 text-blue-600">Component Examples</a></li>
+                    <li><a href="#advanced" class="nav-link block px-4 py-2 rounded hover:bg-blue-50 text-blue-600">Advanced Techniques</a></li>
+                </ul>
+                
+                <!-- Additional quick links to days -->
+                <div class="mt-8 pt-4 border-t">
+                    <h3 class="text-lg font-bold mb-3 text-gray-800">Quick Day Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="day1/day1.html" class="block px-4 py-2 rounded hover:bg-blue-50 text-blue-600"><i class="fas fa-arrow-right mr-2"></i>Day 1 Tutorial</a></li>
+                        <li><a href="day2/day2.html" class="block px-4 py-2 rounded hover:bg-green-50 text-green-600"><i class="fas fa-arrow-right mr-2"></i>Day 2 Tutorial</a></li>
+                        <li><a href="day3/day3.html" class="block px-4 py-2 rounded hover:bg-purple-50 text-purple-600"><i class="fas fa-arrow-right mr-2"></i>Day 3 Tutorial</a></li>
+                        <li><a href="day4/day4.html" class="block px-4 py-2 rounded hover:bg-red-50 text-red-600"><i class="fas fa-arrow-right mr-2"></i>Day 4 Tutorial</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Main Content -->
+        <main class="md:w-3/4">
+            <!-- Rest of your existing content remains exactly the same -->
+            <!-- Introduction -->
+            <section id="intro" class="mb-12">
+                <h2 class="text-2xl font-bold mb-4 text-gray-800 border-b pb-2">Introduction to Tailwind CSS</h2>
+                <p class="mb-4">Tailwind CSS is a utility-first CSS framework that allows you to build custom designs without ever leaving your HTML.</p>
+                
+                <div class="bg-blue-50 p-4 rounded-lg mb-6">
+                    <h3 class="font-bold text-blue-800 mb-2">Key Benefits:</h3>
+                    <ul class="list-disc pl-5 text-blue-700">
+                        <li>No more custom CSS to maintain</li>
+                        <li>Responsive design made easy</li>
+                        <li>Highly customizable</li>
+                        <li>Small bundle size with PurgeCSS</li>
+                        <li>Consistent design system</li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- Setup & Installation -->
+            <section id="setup" class="mb-12">
+                <h2 class="text-2xl font-bold mb-4 text-gray-800 border-b pb-2">Setup & Installation</h2>
+                
+                <h3 class="text-xl font-semibold mb-3">CDN Method (Quick Start)</h3>
+                <div class="code-block">
+                    &lt;script src="https://cdn.tailwindcss.com"&gt;&lt;/script&gt;
+                </div>
+
+                <h3 class="text-xl font-semibold mb-3 mt-6">npm Installation (Recommended)</h3>
+                <div class="code-block">
+                    npm install -D tailwindcss<br>
+                    npx tailwindcss init
+                </div>
+
+                <p class="mt-4">Then add Tailwind directives to your CSS:</p>
+                <div class="code-block">
+                    @tailwind base; <br>
+                    @tailwind components; <br>
+                    @tailwind utilities; <br>
+                </div>
+            </section>
+
+            <!-- Continue with all your existing sections exactly as they were -->
+            <!-- ... (all your existing sections remain unchanged) ... -->
+
+            <!-- Conclusion -->
+            <section class="bg-green-50 p-6 rounded-lg border border-green-200">
+                <h2 class="text-2xl font-bold mb-4 text-green-800">Next Steps</h2>
+                <p class="mb-4">You've now learned the fundamentals of Tailwind CSS! To continue your journey:</p>
+                <ul class="list-disc pl-5 text-green-700">
+                    <li>Practice building components and layouts</li>
+                    <li>Explore the official Tailwind CSS documentation</li>
+                    <li>Learn about Tailwind UI for pre-designed components</li>
+                    <li>Experiment with custom configurations</li>
+                    <li>Integrate Tailwind with JavaScript frameworks like React or Vue</li>
+                </ul>
+                <p class="mt-4 text-green-800 font-semibold">Happy coding with Tailwind CSS!</p>
+            </section>
+        </main>
+    </div>
+    <footer class="bg-blue-700 text-white text-center py-4">
+        <h1 id="footer-head" class="text-xl"></h1>
+        <p>For Study Material</p>
+    </footer>
+
+    <script>
+        // Simple navigation highlighting
+        let footerHead = document.getElementById('footer-head');
+        footerHead.textContent = "";
+        let date = new Date();
+        let year = date.getFullYear();
+        footerHead.textContent += `© ${year} Riyas Ahamed`;
+
+        document.addEventListener('DOMContentLoaded', function() {
+            const navLinks = document.querySelectorAll('.nav-link');
+            
+            navLinks.forEach(link => {
+                link.addEventListener('click', function() {
+                    navLinks.forEach(l => l.classList.remove('active'));
+                    this.classList.add('active');
+                });
+            });
+            
+            // Add active state to day navigation buttons on hover
+            const dayBtns = document.querySelectorAll('.day-btn');
+            dayBtns.forEach(btn => {
+                btn.addEventListener('mouseenter', function() {
+                    this.style.transform = 'translateY(-2px)';
+                });
+                btn.addEventListener('mouseleave', function() {
+                    this.style.transform = 'translateY(0)';
+                });
+            });
+        });
+    </script>
+</body>
+</html>
